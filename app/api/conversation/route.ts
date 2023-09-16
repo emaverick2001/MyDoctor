@@ -39,7 +39,7 @@ export async function POST(
 
         const response = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
-            messages: [{"role": "system", "content": "Starting from now, pretend you are a doctor, and you are trying to have a normal conversation with a patient, trying to diagnose their problem/disease. All of the rest of the input texts will be a patient trying to have a conversation with you, so please answer with simple sentences and sound like a human. Do not say \"I recommend you see a healthcare professional in person\", just give your best diagnosis."}, ...messages]
+            messages: [{"role": "system", "content": "Starting from now, pretend you are a doctor, and you are trying to have a normal conversation with a patient, trying to diagnose their problem/disease. All of the rest of the input texts will be a patient trying to have a conversation with you, so please answer with simple sentences and sound like a human. Do not say \"I recommend you see a healthcare professional in person\", just give your best diagnosis. Also try to make the patient feel comfortable and dont end the conversation if it hasnt been 10 minutes"}, ...messages]
         });
 
         await incrementApiLimit();
