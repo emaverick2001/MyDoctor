@@ -61,8 +61,8 @@ const ConversationPage = () => {
     return(
         <div>
             <Heading 
-            title="Conversation"
-            description="Our most advanced conversation model."
+            title="Talk to Doctor"
+            description="get help instantly"
             icon={MessageSquare}
             iconColor="text-violet-500"
             bgColor="bg-violet-500/10"
@@ -93,7 +93,7 @@ const ConversationPage = () => {
                                             <Input
                                             className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                                             disabled={isLoading}
-                                            placeholder="How do I calculate the radius of a circle?"
+                                            placeholder="How are you feeling today?"
                                             {...field}
                                             />
                                         </FormControl>

@@ -21,34 +21,10 @@ const routes = [
         color: "text-sky-500",
     },
     {
-        label: "Conversation",
+        label: "Talk to Doctor",
         icon: MessageSquare,
         href: "/conversation",
         color: "text-violet-500",
-    },
-    {
-        label: "Image Generation",
-        icon: ImageIcon,
-        href: "/image",
-        color: "text-pink-700",
-    },
-    {
-        label: "Video Generation",
-        icon: VideoIcon,
-        href: "/video",
-        color: "text-orange-700",
-    },
-    {
-        label: "Music Generation",
-        icon: Music,
-        href: "/music",
-        color: "text-emerald-500",
-    },
-    {
-        label: "Code Generation",
-        icon: Code,
-        href: "/code",
-        color: "text-greem-700",
     },
     {
         label: "Settings",
@@ -69,12 +45,12 @@ const Sidebar = () => {
                             <Image
                                 fill
                                 alt="Logo"
-                                src="/logo.png"
+                                src="/mascot.png"
                             />
                         </div>
                         <h1 className={cn("text-2xl font-bold", montserrat.
                         className)}>
-                            Genius
+                            MyDoctor
                         </h1>
                     </Link>
                     <div className="space-y-1">
