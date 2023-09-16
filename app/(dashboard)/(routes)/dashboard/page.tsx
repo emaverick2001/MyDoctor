@@ -5,7 +5,6 @@ import { ArrowRight, Code, ImageIcon, MessageSquare, Music, VideoIcon } from "lu
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
-import React, { useEffect } from 'react';
 
 const tools = [
   {
@@ -18,35 +17,10 @@ const tools = [
 ]
 
 const DashboardPage = ()  => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-
-    script.onload = function() {
-      (window as any).Calendly.initBadgeWidget({
-        url: 'https://calendly.com/my-doctor',
-        text: 'Schedule an Appointment',
-        color: '#0069ff',
-        textColor: '#ffffff',
-        branding: true
-      });
-    };
-
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup when the component unmounts
-      document.head.removeChild(script);
-    };
-  }, []);
 
   const router = useRouter();
   return (
     <div>
-      {/* Include the Calendly badge widget */}
-      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-      
       <div className="mb-8 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center">
           Get your questions answered
