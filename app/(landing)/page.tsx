@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
-
 const LandingPage = () => {
-    return(
+    return (
         <div>
-            Landing Page (Protected)
+            Landing Page (Unprotected)
             <div>
                 <Link href="/sign-in">
                     <Button>
@@ -21,6 +20,5 @@ const LandingPage = () => {
         </div>
     );
 }
-
 
 export default LandingPage;
