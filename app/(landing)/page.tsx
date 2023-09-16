@@ -1,6 +1,21 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+const {PrismaClient} = require('@prisma/client');
+const prisma = new PrismaClient();
+
+async function addUser() {
+    const user = await prisma.user.create( {
+        data: {
+            email: 'myemail@mail.com',
+            name: 'Myname',
+            Role: 'PATIENT',
+            conversation: [""],
+            },
+    });
+}
+
+
 
 const LandingPage = () => {
     return(
@@ -8,7 +23,7 @@ const LandingPage = () => {
             Landing Page (Protected)
             <div>
                 <Link href="/sign-in">
-                    <Button>
+                    <Button >
                         Login
                     </Button>
                 </Link>
@@ -18,6 +33,7 @@ const LandingPage = () => {
                     </Button>
                 </Link>
             </div>
+            
         </div>
     );
 }
