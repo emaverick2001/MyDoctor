@@ -7,7 +7,7 @@ const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openai = new OpenAIApi(configuration);
+const openai =  new OpenAIApi(configuration);
 
 export async function POST(
     req: Request
@@ -16,6 +16,7 @@ export async function POST(
     console.log(JSON.stringify(openai));
     try {
         const { userId } = auth();
+        console.log(userId);
         const body = await req.json();
         const { messages } = body;
 
@@ -45,8 +46,8 @@ export async function POST(
         await incrementApiLimit();
 
         return NextResponse.json(response.data.choices[0].message);
-    }catch (error){
+    }catch (error: any){
         console.log("[CONVERSATION_ERROR]",error);
-        return new NextResponse("Internal error", { status: 500 });
+        return new NextResponse(error.message, { status: 500 });
     }
 }
