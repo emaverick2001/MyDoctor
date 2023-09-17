@@ -1,10 +1,10 @@
 ## Click [here](https://my-doctor-emxx.vercel.app/) to visit the website.
 
+### MyDoctor
 
+## Problem statement:
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+Meeting a doctor can sometimes be nerve-racking. Patients need a way to practice talking to their doctors virtually before meeting their doctors in person in order to increase patient confidence. 
 
 First, run the development server:
 
