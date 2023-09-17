@@ -21,7 +21,7 @@ const routes = [
         color: "text-sky-500",
     },
     {
-        label: "Talk to Doctor",
+        label: "Talk to Your Doctors",
         icon: MessageSquare,
         href: "/conversation",
         color: "text-violet-500",

@@ -61,7 +61,7 @@ const ConversationPage = () => {
     return(
         <div>
             <Heading 
-            title="Talk to Doctor"
+            title="Talk to Your Doctors"
             description="get help instantly"
             icon={MessageSquare}
             iconColor="text-violet-500"
