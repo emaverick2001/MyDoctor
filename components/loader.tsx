@@ -10,7 +10,7 @@ export const Loader = () => {
                 />
             </div>
             <p className="text-sm text-muted-foreground">
-                MyDoctor is thinking...
+                your doctor is thinking...
             </p>
         </div>
     );

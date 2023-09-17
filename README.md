@@ -1,6 +1,6 @@
 ## Click [here](https://my-doctor-emxx.vercel.app/) to visit the website.
 
-### MyDoctor
+### DOCTALK
 
 ## Problem statement:
 

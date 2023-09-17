@@ -53,7 +53,7 @@ export default function Home() {
             </a>
           </div>
           <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Get your questions answered with MyDoctor
+            Get your questions answered with DOCTALK
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Have a better doctors appointment
