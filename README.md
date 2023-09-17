@@ -1,5 +1,4 @@
-## Click [here](https://link-url-here.org) to visit the website.
-Website: my-doctor-emxx.vercel.app
+## Click [here](my-doctor-emxx.vercel.app) to visit the website.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
